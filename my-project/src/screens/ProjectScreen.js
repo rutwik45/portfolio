@@ -6,7 +6,7 @@ const ProjectScreen=()=>{
             
             <h1  className="text-3xl font-bold mx-5 my-5 ">Project</h1>
             
-            <div className='grid grid-cols-2 bg-slate-100 my-200 shadow-2xl '>
+            <div className='md:ml-auto flex flex-wrap grid grid-cols-2 bg-slate-100 my-200 shadow-2xl '>
                 <div className='ml-10 overflow-hidden rounded-md my-5'>
                     <Image src={img1}  width='600px'/>
                 </div>

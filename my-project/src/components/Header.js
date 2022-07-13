@@ -1,22 +1,22 @@
 import { Link } from "react-router-dom"
 const Header=()=>{
     return (
-        <div class="flex justify-between border-solid border-2 from-transparent border-sky-500 shadow-lg w-[100%] bg-zinc-700 text-white brightness-125">
+        <header className="text-gray-400 bg-gray-900 body-font">
+        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a href className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
             
-            <span className="text-2xl font-bold mx-5 my-5 tracking-tight ">
-                RUTWIK BHATDE
-            </span>
-            <div class="flex justify-around">
-                <nav class="flex justify-around">
-                    <Link to='/' class="mx-5 my-5 text-lg font-bold hover:text-blue-600/100">Home</Link>
-                    <Link to="/about" class="mx-5 my-5 text-lg font-bold hover:text-blue-600/100">About</Link>
-                    <Link to="/resume"  class="mx-5 my-5 text-lg font-bold hover:text-blue-600/100">Resume</Link>
-                    <Link to="/project"  class="mx-5 my-5 text-lg font-bold hover:text-blue-600/100">Project</Link>
-                    <Link to="/contact"  class="mx-5 my-5 text-lg font-bold hover:text-blue-600/100">Contact</Link>
-                </nav>
-            </div>
-            
+            <span className="ml-3 text-xl">RUTWIK BHATDE</span>
+          </a>
+          <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <Link to='/' className="mr-5 hover:text-white">Home</Link>
+            <Link to='/about' className="mr-5 hover:text-white">About</Link>
+            <Link to='/resume' className="mr-5 hover:text-white">Resume</Link>
+            <Link to='/project' className="mr-5 hover:text-white">Project</Link>
+            <Link to='/contact' className="mr-5 hover:text-white">Contact</Link>
+          </nav>
+         
         </div>
+      </header>
     )
 }
 export default Header
